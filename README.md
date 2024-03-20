@@ -17,6 +17,8 @@ gRNA screening code and jupyter notebooks developed by the Carothers Lab. We mak
      	- The notebook should be able to run at this point
  - Make sure to add your entire gRNA sequences into the input csv file(s) in the corresponding directories
  	- Formatting is important: see provided example files (one of which reproduces the scRNAs used in the paper cited below)
+    	- You can edit the input files directly in the Codespace, or download an example file and edit it locally
+       		- Local files can be dragged into the Explorer in the Codespace
  - In the notebook, make sure the file name variable (cell 3) points to your specific file
  - Expected runtime of analysis is less than 5 minutes for input files containing up to about 100 gRNAs (~30s for the example files)
 
