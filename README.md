@@ -1,6 +1,6 @@
 
 # gRNA_screen
-gRNA screening code and jupyter notebooks developed by the Carothers Lab.
+gRNA screening code and jupyter notebooks developed by the Carothers Lab. We make this software available under a CC BY-NC-ND license.
 
 ## Installation:
  - Easiest (and quickest: only a few minutes of setup) way to run this is through Docker + GitHub Codespace:
@@ -19,8 +19,8 @@ gRNA screening code and jupyter notebooks developed by the Carothers Lab.
  - In the notebook, make sure the file name variable (cell 3) points to your specific file
  - Expected runtime is less than 5 minutes for input files containing up to about 100 gRNAs
 
-## Screening gRNAs
+## Screening gRNAs:
 - **Two of the output parameters are most important: Folding Barrier (column B) and then Net Binding Energy (column E)**
-- See Fontana, Sparkman-Yager, Faulkner et al. 2024 for explanations of many of these parameters, including correlation to CRISPRa expression
+- See Fontana, Sparkman-Yager, Faulkner _et al._ 2024 for explanations of many of these parameters, including correlation to CRISPRa expression
 - **Primary screening: Folding Barrier should be less than 10 kcal/mol to avoid defective gRNAs**
 - **Secondary screening: Net Binding Energy should generally be as low (more negative) as possible, e.g. -30 kcal/mol is a good target**
