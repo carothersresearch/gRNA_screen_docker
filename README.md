@@ -5,7 +5,7 @@ gRNA screening code and jupyter notebooks developed by the Carothers Lab. We mak
 ## Installation:
  - Easiest (and quickest: only a few minutes of setup) way to run this is through Docker + GitHub Codespace:
 	- From the main repo page, one can launch a Codespace that automatically runs the dockerfile and sets up the environment
-	- We have verified functionality in Codespaces run on Firefox v123.0.1 in MacOSv13.6.1 and Chrome v121.0.6167.185 in Windows 10.
+	- We have verified functionality in Codespaces run on Firefox v123.0.1 and Chrome v122.0.6261.112 in MacOSv13.6.1 and Chrome v121.0.6167.185 in Windows 10.
 - Alternatively, one can install Docker locally, clone the repo, and run the dockerfile. In this case, refer to Docker for system requirements.
 
 ## Usage:
