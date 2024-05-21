@@ -2,7 +2,9 @@ FROM ubuntu:xenial-20160422
 USER root
 RUN apt-get update && apt-get install build-essential -y
 
-RUN apt install ca-certificates && update-ca-certificates --fresh && SSL_CERT_DIR=/etc/ssl/certs
+RUN apt install ca-certificates 
+RUN update-ca-certificates --fresh 
+ENV SSL_CERT_DIR=/etc/ssl/certs
 
 # miniconda
 # Install miniconda
