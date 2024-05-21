@@ -2,6 +2,8 @@ FROM ubuntu:xenial-20160422
 USER root
 RUN apt-get update && apt-get install build-essential -y
 
+RUN apt install ca-certificates && update-ca-certificates --fresh && SSL_CERT_DIR=/etc/ssl/certs
+
 # miniconda
 # Install miniconda
 ENV CONDA_DIR /opt/conda
