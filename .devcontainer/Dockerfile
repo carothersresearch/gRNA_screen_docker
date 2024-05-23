@@ -2,9 +2,9 @@ FROM ubuntu:xenial-20160422
 USER root
 RUN apt-get update && apt-get install build-essential -y
 
-RUN apt install ca-certificates 
+RUN apt-get install -y ca-certificates 
 RUN update-ca-certificates --fresh 
-ENV SSL_CERT_DIR=/etc/ssl/certs
+RUN SSL_CERT_DIR=/etc/ssl/certs
 
 # miniconda
 # Install miniconda
@@ -17,8 +17,10 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 
 WORKDIR /root
 
-RUN yes | conda install libgfortran==1 \
-    && conda install numpy \
+COPY /.devcontainer/libgfortran-1.0-0.tar.bz2 /root 
+RUN conda install --offline libgfortran-1.0-0.tar.bz2
+
+RUN yes | conda install numpy \
     && conda install pandas \
     && conda install biopython \
     && conda install functools_lru_cache \
