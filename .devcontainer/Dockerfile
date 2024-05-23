@@ -18,6 +18,10 @@ ENV PATH=$CONDA_DIR/bin:$PATH
 WORKDIR /root
 
 COPY /.devcontainer/*.bz2 /root 
+
+COPY /.devcontainer/*_part_* /root
+RUN cat mkl-11.3.1-0.tar_part_* > mkl-11.3.1-0_v2.tar.bz2
+
 RUN conda install --offline libgfortran-1.0-0.tar.bz2 \
     && conda install --offline mkl-11.3.1-0.tar.bz2 \
     && conda install --offline numpy-1.10.4-py27_1.tar.bz2 \
