@@ -10,11 +10,11 @@ gRNA screening code and jupyter notebooks developed by the Carothers Lab. We mak
 
 ## Usage:
  - Once inside the Docker container:
- 	- Open a terminal and run `jupyter notebook --allow-root` to start a jupyter server. Copy the resulting URL.
-  	- If using Codespaces or Vs Code: in the Wayfinder_Algorithm_for_gRNA_Evaluation_DSY.ipynb jupyter notebook, select the new kernel:
-   		- Select another kernel > existing jupyter server > enter the URL of a running jupyter server > paste copied URL
+ 	- Open a terminal and run `jupyter notebook` to start a jupyter server
+  	- From the normal jupyter server file browser, open Wayfinder_Algorithm_for_gRNA_Evaluation_DSY.ipynb
+	- Troubleshooting items that were once true but hopefully are things of the past:
+   		- You might need to copy-paste the kernel URL from the terminal into the jupyter notebook (select another kernel > existing jupyter server > enter the URL of a running jupyter server)
        		- A new Codespace might prompt you to install git or python + jupyter extensions: do this if prompted
-     	- The notebook should be able to run at this point
  - Make sure to add your entire gRNA sequences into the input csv file(s) in the corresponding directories
  	- Formatting is important: see provided example files (one of which reproduces the scRNAs used in the paper cited below)
     	- You can edit the input files directly in the Codespace, or download an example file and edit it locally
